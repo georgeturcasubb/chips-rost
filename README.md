@@ -244,10 +244,10 @@ listed above.
 
 ## AI-Assisted Preparation
 
-This repository and the manuscript were prepared with assistance from Codex
-agents configured to use OpenAI GPT-5.5. The human authors retain responsibility
-for the claims, experiments, source attribution, and final text. We disclose
-this tool use and follow the spirit of the Leiden Declaration on Artificial
-Intelligence and Mathematics: transparent tool use, human responsibility,
-careful attribution, reviewability, and open-science practice where corpus
-licenses allow it.
+The coding work in this repository, mainly the Python scripts and release
+helpers, was prepared with assistance from Codex agents configured to use OpenAI
+GPT-5.5. The human authors retain responsibility for the claims, experiments,
+source attribution, code, and final text. We disclose this tool use and follow
+the spirit of the Leiden Declaration on Artificial Intelligence and Mathematics:
+transparent tool use, human responsibility, careful attribution, reviewability,
+and open-science practice where corpus licenses allow it.
