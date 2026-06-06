@@ -17,11 +17,9 @@ Romanian literary texts. The core models are:
 - `CHiPS-R`: optional top-5 reranking selected from grouped out-of-fold
   predictions, not tuned on held-out test labels.
 
-This public branch is intentionally reviewer-focused. It does not include
-manuscript TeX source, Codex workspace files, agent configs, internal reports,
-model binaries, or build artifacts. It does include the public ro-stories text
-copy and the cleaned ro-stories AP archive needed for the secondary public
-corpus checks.
+This public branch is intentionally reviewer-focused. It includes the public
+ro-stories text copy and the cleaned ro-stories AP archive needed for the
+secondary public corpus checks.
 
 ## Contents
 
