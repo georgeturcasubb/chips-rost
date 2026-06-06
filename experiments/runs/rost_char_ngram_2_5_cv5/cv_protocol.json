@@ -1,0 +1,25 @@
+{
+  "baseline": "character 2-5 gram TF-IDF plus LinearSVC",
+  "selection_method": "stratified grouped CV on locked train+validation source-text groups",
+  "test_usage": "held-out test source-text groups are used once after refitting the selected model on train+validation",
+  "evaluation_unit": "work_group/source_text",
+  "seed": 42,
+  "train_work_groups": 276,
+  "validation_work_groups": 58,
+  "trainval_work_groups": 334,
+  "test_work_groups": 58,
+  "requested_folds": 5,
+  "used_folds": 5,
+  "label_counts": {
+    "Creanga": 21,
+    "Delavrancea": 37,
+    "Eminescu": 23,
+    "Filimon": 25,
+    "Garleanu": 37,
+    "Ispirescu": 34,
+    "Oltean": 28,
+    "Plugaru": 34,
+    "Rebreanu": 51,
+    "Slavici": 44
+  }
+}

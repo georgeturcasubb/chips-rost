@@ -1,0 +1,7 @@
+{
+  "input": "data/ro-storiesAP-ROST.zip",
+  "output": "experiments/reproduce/rostories_cleaned_norm_input/texts",
+  "dataset": "rostories",
+  "documents": 1248,
+  "normalization": "Unicode NFC; Romanian cedilla-to-comma conversion; quote, apostrophe, dash, ellipsis, space/tab, trailing-space, and repeated-newline normalization; case, punctuation, digits, and diacritics preserved."
+}

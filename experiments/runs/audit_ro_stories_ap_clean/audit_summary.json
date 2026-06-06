@@ -1,0 +1,11 @@
+{
+  "documents": 1235,
+  "authors": 19,
+  "work_groups": 1235,
+  "duplicate_author_title_groups": 0,
+  "same_size_duplicate_groups": 0,
+  "different_size_duplicate_groups": 0,
+  "exact_duplicate_hashes": 1,
+  "documents_with_author_name_in_text_casefold": 37,
+  "note": "This audit is diagnostic; it does not define exclusions without a documented corpus rule."
+}

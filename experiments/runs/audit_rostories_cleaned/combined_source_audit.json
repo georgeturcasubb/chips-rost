@@ -1,0 +1,675 @@
+{
+  "combined_name": "ROSTories-cleaned",
+  "construction_rule": "ROST wins for overlapping source-text groups; ro-stories-AP-clean supplies remaining groups.",
+  "normalized_text_comparison": true,
+  "primary": {
+    "name": "ROST",
+    "documents": 400,
+    "work_groups": 392,
+    "authors": 10
+  },
+  "secondary": {
+    "name": "ro-stories-AP-clean",
+    "documents": 1235,
+    "work_groups": 1235,
+    "authors": 19
+  },
+  "combined": {
+    "documents": 1248,
+    "work_groups": 1240,
+    "authors": 19,
+    "characters": 16863293
+  },
+  "overlap": {
+    "work_groups_in_both_components": 370,
+    "work_groups_primary_only": 22,
+    "work_groups_secondary_only": 865,
+    "exact_doc_ids_in_both_components": 370,
+    "shared_doc_ids_kept_from_primary": 347,
+    "shared_doc_id_hash_mismatches": 14
+  },
+  "verification": {
+    "expected_work_groups": 1257,
+    "actual_work_groups": 1240,
+    "missing_expected_work_groups": 26,
+    "extra_combined_work_groups": 9,
+    "group_rule_mismatches": 51,
+    "shared_doc_id_hash_mismatches": [
+      "Delavrancea_BoacaSiOnea.txt",
+      "Delavrancea_DeparteDeparte.txt",
+      "Delavrancea_StapaneaOdata.txt",
+      "Delavrancea_Vacantie.txt",
+      "Delavrancea_Zigzag.txt",
+      "Garleanu_OmMilostiv.txt",
+      "Oltean_CumSAuNascutColindele.txt",
+      "Oltean_InCautareaParadisului.txt",
+      "Oltean_SomcutaMare.txt",
+      "Rebreanu_RazboiulInsemnarileUnuiSublocotenent.txt",
+      "Slavici_CrucileRosii.txt",
+      "Slavici_DoiFratiBuni.txt",
+      "Slavici_FloritaDinCodru.txt",
+      "Slavici_ZanaZorilor.txt"
+    ],
+    "overlap_groups_matching_primary": 347,
+    "overlap_groups_matching_secondary": 1,
+    "overlap_groups_matching_neither": 13,
+    "overlap_groups_matching_neither_items": [
+      "Delavrancea__BoacaSiOnea",
+      "Delavrancea__DeparteDeparte",
+      "Delavrancea__StapaneaOdata",
+      "Delavrancea__Vacantie",
+      "Delavrancea__Zigzag",
+      "Garleanu__OmMilostiv",
+      "Oltean__CumSAuNascutColindele",
+      "Oltean__InCautareaParadisului",
+      "Oltean__SomcutaMare",
+      "Rebreanu__RazboiulInsemnarileUnuiSublocotenent",
+      "Slavici__CrucileRosii",
+      "Slavici__FloritaDinCodru",
+      "Slavici__ZanaZorilor"
+    ],
+    "mismatches": [
+      {
+        "work_group": "Creanga__AmintiriDinCopilarieI",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Creanga_AmintiriDinCopilarieI.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Creanga__PovesteaPorculuI",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": false,
+        "in_combined": true,
+        "expected_doc_ids": [],
+        "combined_doc_ids": [
+          "Creanga_PovesteaPorculuI.txt"
+        ]
+      },
+      {
+        "work_group": "Creanga__PovesteaPorcului",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Creanga_PovesteaPorcului.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Creanga__PovesteaPovestiloR",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": false,
+        "in_combined": true,
+        "expected_doc_ids": [],
+        "combined_doc_ids": [
+          "Creanga_PovesteaPovestiloR.txt"
+        ]
+      },
+      {
+        "work_group": "Creanga__PovesteaPovestilor",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Creanga_PovesteaPovestilor.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Creanga__ProstiaOmeneascaPoveste",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Creanga_ProstiaOmeneascaPoveste.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Delavrancea__BoacaSiOnea",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Delavrancea_BoacaSiOnea.txt"
+        ],
+        "combined_doc_ids": [
+          "Delavrancea_BoacaSiOnea.txt"
+        ]
+      },
+      {
+        "work_group": "Delavrancea__DeparteDeparte",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Delavrancea_DeparteDeparte.txt"
+        ],
+        "combined_doc_ids": [
+          "Delavrancea_DeparteDeparte.txt"
+        ]
+      },
+      {
+        "work_group": "Delavrancea__PravoslavniculSiSlaninele",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Delavrancea_PravoslavniculSiSlaninele.txt"
+        ],
+        "combined_doc_ids": [
+          "Delavrancea_PravoslavniculSiSlaninele.txt"
+        ]
+      },
+      {
+        "work_group": "Delavrancea__PravoslavniculSiSlaninile",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Delavrancea_PravoslavniculSiSlaninile.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Delavrancea__StapaneaOdata",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Delavrancea_StapaneaOdata.txt"
+        ],
+        "combined_doc_ids": [
+          "Delavrancea_StapaneaOdata.txt"
+        ]
+      },
+      {
+        "work_group": "Delavrancea__Vacantie",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Delavrancea_Vacantie.txt"
+        ],
+        "combined_doc_ids": [
+          "Delavrancea_Vacantie.txt"
+        ]
+      },
+      {
+        "work_group": "Delavrancea__Zigzag",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Delavrancea_Zigzag.txt"
+        ],
+        "combined_doc_ids": [
+          "Delavrancea_Zigzag.txt"
+        ]
+      },
+      {
+        "work_group": "Filimon__BabaHircaOperaRomanaInDouaActeDeDMillo",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_BabaHircaOperaRomanaInDouaActeDeDMillo.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__CiocoiiVechiSiNoicheraDuduca",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_CiocoiiVechiSiNoicheraDuduca.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__CiocoiiVechiSiNoidinuPaturica",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_CiocoiiVechiSiNoidinuPaturica.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__CiocoiiVechiSiNoieducatiuneaCiocoiului",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_CiocoiiVechiSiNoieducatiuneaCiocoiului.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__CiocoiiVechiSiNoiipocritiiInLupta",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_CiocoiiVechiSiNoiipocritiiInLupta.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__CiocoiiVechiSiNoipostelniculAndronacheTuzluc",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_CiocoiiVechiSiNoipostelniculAndronacheTuzluc.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__CiocoiiVechiSiNoiromanulSiFanariotul",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_CiocoiiVechiSiNoiromanulSiFanariotul.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__DespreTeatrulItalianImpresiuniDinSezonulAnului1858",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_DespreTeatrulItalianImpresiuniDinSezonulAnului1858.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__IlBarbiereDiSevillaMelodramaComicaInDouaActe",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_IlBarbiereDiSevillaMelodramaComicaInDouaActe.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__InfluentaCometuluiAsupraArtistilorDeLaOperaItaliana",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_InfluentaCometuluiAsupraArtistilorDeLaOperaItaliana.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__LuciaDiLammermoorDramaInTreiActeDeSalvatoreCammarano",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_LuciaDiLammermoorDramaInTreiActeDeSalvatoreCammarano.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__OmulDeFloriCuBarbaDeMatasaSauPovesteaLuiFatFrumos",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_OmulDeFloriCuBarbaDeMatasaSauPovesteaLuiFatFrumos.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__SchitaBiograficaAsupraMaestruluiBelliniSiAOperilorSale",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_SchitaBiograficaAsupraMaestruluiBelliniSiAOperilorSale.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__SchitaDinViataSiScrierileCelebruluiMaestruDonizetti",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_SchitaDinViataSiScrierileCelebruluiMaestruDonizetti.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Filimon__SchiteTraseDinViataSiScrierileMuzicaleAleCelebruluiMaestruGVerdi",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Filimon_SchiteTraseDinViataSiScrierileMuzicaleAleCelebruluiMaestruGVerdi.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Garleanu__Calatoare",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Garleanu_Calatoare.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Garleanu__DupaAsemanareaLor",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Garleanu_DupaAsemanareaLor.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Garleanu__MaiSus",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Garleanu_MaiSus.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Garleanu__Musculita",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Garleanu_Musculita.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Garleanu__Nedespartite",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Garleanu_Nedespartite.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Garleanu__ORaza",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": false,
+        "expected_doc_ids": [
+          "Garleanu_ORaza.txt"
+        ],
+        "combined_doc_ids": []
+      },
+      {
+        "work_group": "Garleanu__OmMilostiv",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Garleanu_OmMilostiv.txt"
+        ],
+        "combined_doc_ids": [
+          "Garleanu_OmMilostiv.txt"
+        ]
+      },
+      {
+        "work_group": "Garleanu__ΓÇïCalatoare",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": false,
+        "in_combined": true,
+        "expected_doc_ids": [],
+        "combined_doc_ids": [
+          "Garleanu_ΓÇïCalatoare.txt"
+        ]
+      },
+      {
+        "work_group": "Garleanu__ΓÇïDupaAsemanareaLor",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": false,
+        "in_combined": true,
+        "expected_doc_ids": [],
+        "combined_doc_ids": [
+          "Garleanu_ΓÇïDupaAsemanareaLor.txt"
+        ]
+      },
+      {
+        "work_group": "Garleanu__ΓÇïMaiSus",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": false,
+        "in_combined": true,
+        "expected_doc_ids": [],
+        "combined_doc_ids": [
+          "Garleanu_ΓÇïMaiSus.txt"
+        ]
+      },
+      {
+        "work_group": "Garleanu__ΓÇïMusculita",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": false,
+        "in_combined": true,
+        "expected_doc_ids": [],
+        "combined_doc_ids": [
+          "Garleanu_ΓÇïMusculita.txt"
+        ]
+      },
+      {
+        "work_group": "Garleanu__ΓÇïNedespartite",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": false,
+        "in_combined": true,
+        "expected_doc_ids": [],
+        "combined_doc_ids": [
+          "Garleanu_ΓÇïNedespartite.txt"
+        ]
+      },
+      {
+        "work_group": "Garleanu__ΓÇïORaza",
+        "expected_source": "ro-stories-AP-clean",
+        "in_primary": false,
+        "in_secondary": false,
+        "in_combined": true,
+        "expected_doc_ids": [],
+        "combined_doc_ids": [
+          "Garleanu_ΓÇïORaza.txt"
+        ]
+      },
+      {
+        "work_group": "Oltean__CumSAuNascutColindele",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Oltean_CumSAuNascutColindele.txt"
+        ],
+        "combined_doc_ids": [
+          "Oltean_CumSAuNascutColindele.txt"
+        ]
+      },
+      {
+        "work_group": "Oltean__InCautareaParadisului",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Oltean_InCautareaParadisului.txt"
+        ],
+        "combined_doc_ids": [
+          "Oltean_InCautareaParadisului.txt"
+        ]
+      },
+      {
+        "work_group": "Oltean__NuSiNuuuuuuuuuuuuuu",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": false,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Oltean_NuSiNuuuuuuuuuuuuuu.txt"
+        ],
+        "combined_doc_ids": [
+          "Oltean_NuSiNuuuuuuuuuuuuuu.txt"
+        ]
+      },
+      {
+        "work_group": "Oltean__SomcutaMare",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Oltean_SomcutaMare.txt"
+        ],
+        "combined_doc_ids": [
+          "Oltean_SomcutaMare.txt"
+        ]
+      },
+      {
+        "work_group": "Rebreanu__RazboiulInsemnarileUnuiSublocotenent",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Rebreanu_RazboiulInsemnarileUnuiSublocotenent.txt"
+        ],
+        "combined_doc_ids": [
+          "Rebreanu_RazboiulInsemnarileUnuiSublocotenent.txt"
+        ]
+      },
+      {
+        "work_group": "Slavici__CrucileRosii",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Slavici_CrucileRosii.txt"
+        ],
+        "combined_doc_ids": [
+          "Slavici_CrucileRosii.txt"
+        ]
+      },
+      {
+        "work_group": "Slavici__DoiFratiBuni",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Slavici_DoiFratiBuni.txt"
+        ],
+        "combined_doc_ids": [
+          "Slavici_DoiFratiBuni.txt"
+        ]
+      },
+      {
+        "work_group": "Slavici__FloritaDinCodru",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Slavici_FloritaDinCodru.txt"
+        ],
+        "combined_doc_ids": [
+          "Slavici_FloritaDinCodru.txt"
+        ]
+      },
+      {
+        "work_group": "Slavici__ZanaZorilor",
+        "expected_source": "ROST",
+        "in_primary": true,
+        "in_secondary": true,
+        "in_combined": true,
+        "expected_doc_ids": [
+          "Slavici_ZanaZorilor.txt"
+        ],
+        "combined_doc_ids": [
+          "Slavici_ZanaZorilor.txt"
+        ]
+      }
+    ]
+  },
+  "duplicate_hashes": {
+    "count": 1,
+    "touching_test_count": 0,
+    "items": [
+      {
+        "sha256": "bb94f8bed3f6114e56e6732812813774bde1176f72cd2af0b718390980e375b5",
+        "documents": 2,
+        "splits": [
+          "train",
+          "validation"
+        ],
+        "touches_test": false,
+        "doc_ids": [
+          "Iorga_IncaUnulPreotulMateevici.txt",
+          "Iorga_UnLuptatorPentruDreptSimionMurafa.txt"
+        ]
+      }
+    ]
+  }
+}

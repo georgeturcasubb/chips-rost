@@ -1,0 +1,58 @@
+{
+  "documents": 400,
+  "authors": 10,
+  "work_groups": 392,
+  "characters": 7414355,
+  "per_author": {
+    "Creanga": {
+      "documents": 28,
+      "work_groups": 25,
+      "characters": 559248
+    },
+    "Delavrancea": {
+      "documents": 43,
+      "work_groups": 43,
+      "characters": 1025576
+    },
+    "Eminescu": {
+      "documents": 27,
+      "work_groups": 27,
+      "characters": 887301
+    },
+    "Filimon": {
+      "documents": 34,
+      "work_groups": 29,
+      "characters": 543520
+    },
+    "Garleanu": {
+      "documents": 43,
+      "work_groups": 43,
+      "characters": 209117
+    },
+    "Ispirescu": {
+      "documents": 40,
+      "work_groups": 40,
+      "characters": 707815
+    },
+    "Oltean": {
+      "documents": 33,
+      "work_groups": 33,
+      "characters": 102689
+    },
+    "Plugaru": {
+      "documents": 40,
+      "work_groups": 40,
+      "characters": 502455
+    },
+    "Rebreanu": {
+      "documents": 60,
+      "work_groups": 60,
+      "characters": 788637
+    },
+    "Slavici": {
+      "documents": 52,
+      "work_groups": 52,
+      "characters": 2087997
+    }
+  }
+}

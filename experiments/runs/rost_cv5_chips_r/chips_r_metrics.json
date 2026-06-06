@@ -1,0 +1,1120 @@
+{
+  "base_models": {
+    "CH_SVM": {
+      "accuracy": 0.9137931034482759,
+      "macro_f1": 0.9171814296814297,
+      "balanced_accuracy": 0.9230555555555556,
+      "classification_report": {
+        "Creanga": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 4.0
+        },
+        "Delavrancea": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        },
+        "Eminescu": {
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1-score": 0.8888888888888888,
+          "support": 4.0
+        },
+        "Filimon": {
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1-score": 0.8888888888888888,
+          "support": 4.0
+        },
+        "Garleanu": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1-score": 0.9230769230769231,
+          "support": 6.0
+        },
+        "Ispirescu": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9090909090909091,
+          "support": 6.0
+        },
+        "Oltean": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1-score": 0.8888888888888888,
+          "support": 5.0
+        },
+        "Plugaru": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9090909090909091,
+          "support": 6.0
+        },
+        "Rebreanu": {
+          "precision": 0.8888888888888888,
+          "recall": 0.8888888888888888,
+          "f1-score": 0.8888888888888888,
+          "support": 9.0
+        },
+        "Slavici": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1-score": 0.875,
+          "support": 8.0
+        },
+        "accuracy": 0.9137931034482759,
+        "macro avg": {
+          "precision": 0.9221031746031747,
+          "recall": 0.9230555555555556,
+          "f1-score": 0.9171814296814297,
+          "support": 58.0
+        },
+        "weighted avg": {
+          "precision": 0.9231527093596059,
+          "recall": 0.9137931034482759,
+          "f1-score": 0.9138466897087587,
+          "support": 58.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          7
+        ]
+      ]
+    },
+    "FFT12_LR": {
+      "accuracy": 0.8448275862068966,
+      "macro_f1": 0.8266330891330892,
+      "balanced_accuracy": 0.8425,
+      "classification_report": {
+        "Creanga": {
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1-score": 0.8888888888888888,
+          "support": 4.0
+        },
+        "Delavrancea": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1-score": 0.9230769230769231,
+          "support": 6.0
+        },
+        "Eminescu": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Filimon": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 4.0
+        },
+        "Garleanu": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1-score": 0.8571428571428571,
+          "support": 6.0
+        },
+        "Ispirescu": {
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8333333333333334,
+          "support": 6.0
+        },
+        "Oltean": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1-score": 0.8888888888888888,
+          "support": 5.0
+        },
+        "Plugaru": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 6.0
+        },
+        "Rebreanu": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 9.0
+        },
+        "Slavici": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1-score": 0.875,
+          "support": 8.0
+        },
+        "accuracy": 0.8448275862068966,
+        "macro avg": {
+          "precision": 0.8782142857142856,
+          "recall": 0.8425,
+          "f1-score": 0.8266330891330892,
+          "support": 58.0
+        },
+        "weighted avg": {
+          "precision": 0.8766009852216748,
+          "recall": 0.8448275862068966,
+          "f1-score": 0.8324365289882532,
+          "support": 58.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          1,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          7
+        ]
+      ]
+    },
+    "CHiPS_F": {
+      "accuracy": 0.9310344827586207,
+      "macro_f1": 0.9341404940089151,
+      "balanced_accuracy": 0.9341666666666667,
+      "classification_report": {
+        "Creanga": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 4.0
+        },
+        "Delavrancea": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        },
+        "Eminescu": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 4.0
+        },
+        "Filimon": {
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1-score": 0.8888888888888888,
+          "support": 4.0
+        },
+        "Garleanu": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1-score": 0.9230769230769231,
+          "support": 6.0
+        },
+        "Ispirescu": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9090909090909091,
+          "support": 6.0
+        },
+        "Oltean": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1-score": 0.8888888888888888,
+          "support": 5.0
+        },
+        "Plugaru": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9090909090909091,
+          "support": 6.0
+        },
+        "Rebreanu": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1-score": 0.9473684210526315,
+          "support": 9.0
+        },
+        "Slavici": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1-score": 0.875,
+          "support": 8.0
+        },
+        "accuracy": 0.9310344827586207,
+        "macro avg": {
+          "precision": 0.9432142857142857,
+          "recall": 0.9341666666666667,
+          "f1-score": 0.9341404940089151,
+          "support": 58.0
+        },
+        "weighted avg": {
+          "precision": 0.9386699507389162,
+          "recall": 0.9310344827586207,
+          "f1-score": 0.9305839351211403,
+          "support": 58.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          7
+        ]
+      ]
+    }
+  },
+  "CHiPS_R": {
+    "accuracy": 0.9137931034482759,
+    "macro_f1": 0.9109658908343119,
+    "balanced_accuracy": 0.9091666666666667,
+    "classification_report": {
+      "Creanga": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 4.0
+      },
+      "Delavrancea": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6.0
+      },
+      "Eminescu": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1-score": 0.8571428571428571,
+        "support": 4.0
+      },
+      "Filimon": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1-score": 0.8,
+        "support": 4.0
+      },
+      "Garleanu": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1-score": 0.9230769230769231,
+        "support": 6.0
+      },
+      "Ispirescu": {
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.9090909090909091,
+        "support": 6.0
+      },
+      "Oltean": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1-score": 0.8888888888888888,
+        "support": 5.0
+      },
+      "Plugaru": {
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.9090909090909091,
+        "support": 6.0
+      },
+      "Rebreanu": {
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1-score": 0.9473684210526315,
+        "support": 9.0
+      },
+      "Slavici": {
+        "precision": 0.875,
+        "recall": 0.875,
+        "f1-score": 0.875,
+        "support": 8.0
+      },
+      "accuracy": 0.9137931034482759,
+      "macro avg": {
+        "precision": 0.9298809523809524,
+        "recall": 0.9091666666666667,
+        "f1-score": 0.9109658908343119,
+        "support": 58.0
+      },
+      "weighted avg": {
+        "precision": 0.9294745484400657,
+        "recall": 0.9137931034482759,
+        "f1-score": 0.914601450173138,
+        "support": 58.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        7
+      ]
+    ]
+  },
+  "selected_reranker": {
+    "policy": "CH_SVM_TOP5",
+    "C": 0.03,
+    "class_weight": "",
+    "non_anchor_weight": 4.0,
+    "mode": {
+      "mode": "anchor_margin_gate",
+      "anchor_margin_max": 0.5,
+      "meta_margin_min": 0.2
+    },
+    "cv_metrics": {
+      "accuracy": 0.9161676646706587,
+      "macro_f1": 0.9164709885218814
+    },
+    "anchor_cv_metrics": {
+      "accuracy": 0.9011976047904192,
+      "macro_f1": 0.9001024111909812
+    },
+    "net_accuracy_gain": 0.014970059880239472,
+    "overrides": 18
+  },
+  "selected_policy_anchor_test": {
+    "accuracy": 0.9137931034482759,
+    "macro_f1": 0.9171814296814297,
+    "balanced_accuracy": 0.9230555555555556,
+    "classification_report": {
+      "Creanga": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 4.0
+      },
+      "Delavrancea": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6.0
+      },
+      "Eminescu": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1-score": 0.8888888888888888,
+        "support": 4.0
+      },
+      "Filimon": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1-score": 0.8888888888888888,
+        "support": 4.0
+      },
+      "Garleanu": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1-score": 0.9230769230769231,
+        "support": 6.0
+      },
+      "Ispirescu": {
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.9090909090909091,
+        "support": 6.0
+      },
+      "Oltean": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1-score": 0.8888888888888888,
+        "support": 5.0
+      },
+      "Plugaru": {
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.9090909090909091,
+        "support": 6.0
+      },
+      "Rebreanu": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1-score": 0.8888888888888888,
+        "support": 9.0
+      },
+      "Slavici": {
+        "precision": 0.875,
+        "recall": 0.875,
+        "f1-score": 0.875,
+        "support": 8.0
+      },
+      "accuracy": 0.9137931034482759,
+      "macro avg": {
+        "precision": 0.9221031746031747,
+        "recall": 0.9230555555555556,
+        "f1-score": 0.9171814296814297,
+        "support": 58.0
+      },
+      "weighted avg": {
+        "precision": 0.9231527093596059,
+        "recall": 0.9137931034482759,
+        "f1-score": 0.9138466897087587,
+        "support": 58.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        7
+      ]
+    ]
+  },
+  "transition_summary_vs_ch_svm": {
+    "test_overrides_vs_selected_policy_anchor": 2,
+    "test_overrides_vs_ch_svm": 2,
+    "fixed_ch_svm_errors": 1,
+    "broken_ch_svm_correct": 1,
+    "wrong_to_wrong_changes": 0,
+    "unchanged_ch_svm_errors": 4
+  },
+  "candidate_oracle": [
+    {
+      "split": "trainval_oof",
+      "policy": "CH_SVM_TOP5",
+      "top_k": 5,
+      "groups": 334,
+      "anchor_accuracy": 0.9011976047904192,
+      "true_author_in_candidates": 330,
+      "candidate_oracle_accuracy": 0.9880239520958084,
+      "fixable_anchor_errors": 29,
+      "unfixable_anchor_errors": 4
+    },
+    {
+      "split": "test",
+      "policy": "CH_SVM_TOP5",
+      "top_k": 5,
+      "groups": 58,
+      "anchor_accuracy": 0.9137931034482759,
+      "true_author_in_candidates": 58,
+      "candidate_oracle_accuracy": 1.0,
+      "fixable_anchor_errors": 5,
+      "unfixable_anchor_errors": 0
+    },
+    {
+      "split": "trainval_oof",
+      "policy": "CHIPS_F_TOP5",
+      "top_k": 5,
+      "groups": 334,
+      "anchor_accuracy": 0.9101796407185628,
+      "true_author_in_candidates": 332,
+      "candidate_oracle_accuracy": 0.9940119760479041,
+      "fixable_anchor_errors": 28,
+      "unfixable_anchor_errors": 2
+    },
+    {
+      "split": "test",
+      "policy": "CHIPS_F_TOP5",
+      "top_k": 5,
+      "groups": 58,
+      "anchor_accuracy": 0.9310344827586207,
+      "true_author_in_candidates": 57,
+      "candidate_oracle_accuracy": 0.9827586206896551,
+      "fixable_anchor_errors": 3,
+      "unfixable_anchor_errors": 1
+    },
+    {
+      "split": "trainval_oof",
+      "policy": "UNION_RRF_TOP5",
+      "top_k": 5,
+      "groups": 334,
+      "anchor_accuracy": 0.9011976047904192,
+      "true_author_in_candidates": 333,
+      "candidate_oracle_accuracy": 0.9970059880239521,
+      "fixable_anchor_errors": 32,
+      "unfixable_anchor_errors": 1
+    },
+    {
+      "split": "test",
+      "policy": "UNION_RRF_TOP5",
+      "top_k": 5,
+      "groups": 58,
+      "anchor_accuracy": 0.9137931034482759,
+      "true_author_in_candidates": 57,
+      "candidate_oracle_accuracy": 0.9827586206896551,
+      "fixable_anchor_errors": 4,
+      "unfixable_anchor_errors": 1
+    }
+  ],
+  "_metadata": {
+    "evaluation_unit": "work_group/source_text",
+    "train_work_groups": 276,
+    "validation_work_groups": 58,
+    "trainval_work_groups": 334,
+    "test_work_groups": 58,
+    "test_documents": 63,
+    "top_k": 5
+  }
+}

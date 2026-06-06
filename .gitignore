@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+
+# Local-only corpus inputs are intentionally not vendored.
+data/ROST-NormElip/
+data/ro-storiesAP-ROST.zip
+
+# Generated outputs and local model binaries.
+models/
+*.joblib
+*.pkl
+dist/
+latex/
+experiments/reproduce/

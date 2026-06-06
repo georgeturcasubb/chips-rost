@@ -1,0 +1,56 @@
+{
+  "input": "experiments/runs/rostories_cleaned_norm_input/texts",
+  "dataset": "rostories",
+  "split_json": "experiments/configs/rostories_cleaned_source_split_seed42.json",
+  "base_run": "experiments/runs/rostories_cleaned_cv5_full",
+  "masking": "case-insensitive self-author label replaced by same-length x characters",
+  "documents": 1248,
+  "documents_with_masked_occurrences": 23,
+  "masked_occurrences": 45,
+  "documents_with_masked_occurrences_by_split": {
+    "train": 14,
+    "test": 7,
+    "validation": 2
+  },
+  "flagged_work_groups_by_split": {
+    "train": [
+      "Delavrancea__IancuMoroi",
+      "Filimon__DespreTeatrulItalianImpresiuni1858",
+      "Iorga__AdapostulDinValeniiDeMunte",
+      "Iorga__CeaDintaiInvatatura",
+      "Iorga__IntaiiAniDeProfesorat",
+      "Iorga__OsteneliDeIstoric",
+      "Iorga__SfirsitDeVacanteIntreAlteIntrigiSiInsulte",
+      "Istrati__CasaThu╠êringer",
+      "Istrati__OmulCareNuAderaLaNimic",
+      "Slavici__InchisorileMeleiarLaVacaresti",
+      "Slavici__InchisorileMeleinainteSiDupaVenireaInRegat",
+      "Slavici__InchisorileMelelaDomnesti",
+      "Slavici__InchisorileMelelaHotelModern",
+      "Slavici__InchisorileMeleprocesulZiaristilor"
+    ],
+    "validation": [
+      "Iorga__OrizonturiMostenite",
+      "Istrati__Nerantula"
+    ],
+    "test": [
+      "Iorga__IdeiSiLecturi",
+      "Iorga__PrimePublicatii",
+      "Iorga__Seful",
+      "Iorga__UltimeleConstatariBudgetareSiGestulDeOmOnestAlPlecarii",
+      "Iorga__UniversitateaDeAcasa",
+      "Istrati__CiuliniiBaraganului",
+      "Slavici__InchisorileMelelaLuvru"
+    ]
+  },
+  "test_flagged_work_groups": [
+    "Iorga__IdeiSiLecturi",
+    "Iorga__PrimePublicatii",
+    "Iorga__Seful",
+    "Iorga__UltimeleConstatariBudgetareSiGestulDeOmOnestAlPlecarii",
+    "Iorga__UniversitateaDeAcasa",
+    "Istrati__CiuliniiBaraganului",
+    "Slavici__InchisorileMelelaLuvru"
+  ],
+  "test_usage": "held-out test labels are used only for final evaluation and diagnostic subset reporting"
+}

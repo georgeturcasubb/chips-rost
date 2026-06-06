@@ -1,0 +1,103 @@
+{
+  "documents": 1235,
+  "authors": 19,
+  "work_groups": 1235,
+  "characters": 14864949,
+  "per_author": {
+    "Bacalbasa": {
+      "documents": 129,
+      "work_groups": 129,
+      "characters": 524963
+    },
+    "Caragiale": {
+      "documents": 59,
+      "work_groups": 59,
+      "characters": 693016
+    },
+    "Creanga": {
+      "documents": 45,
+      "work_groups": 45,
+      "characters": 473245
+    },
+    "Delavrancea": {
+      "documents": 44,
+      "work_groups": 44,
+      "characters": 869547
+    },
+    "Demetrescu": {
+      "documents": 63,
+      "work_groups": 63,
+      "characters": 294620
+    },
+    "Eminescu": {
+      "documents": 27,
+      "work_groups": 27,
+      "characters": 470987
+    },
+    "Filimon": {
+      "documents": 35,
+      "work_groups": 35,
+      "characters": 470204
+    },
+    "Garleanu": {
+      "documents": 55,
+      "work_groups": 55,
+      "characters": 401020
+    },
+    "Iorga": {
+      "documents": 288,
+      "work_groups": 288,
+      "characters": 3833599
+    },
+    "Ispirescu": {
+      "documents": 40,
+      "work_groups": 40,
+      "characters": 696756
+    },
+    "Istrati": {
+      "documents": 20,
+      "work_groups": 20,
+      "characters": 610717
+    },
+    "Negruzzi": {
+      "documents": 24,
+      "work_groups": 24,
+      "characters": 411840
+    },
+    "Oltean": {
+      "documents": 30,
+      "work_groups": 30,
+      "characters": 64175
+    },
+    "Plugaru": {
+      "documents": 40,
+      "work_groups": 40,
+      "characters": 418853
+    },
+    "Rebreanu": {
+      "documents": 59,
+      "work_groups": 59,
+      "characters": 725548
+    },
+    "Sebastian": {
+      "documents": 46,
+      "work_groups": 46,
+      "characters": 768610
+    },
+    "Slavici": {
+      "documents": 89,
+      "work_groups": 89,
+      "characters": 1949924
+    },
+    "Toparceanu": {
+      "documents": 46,
+      "work_groups": 46,
+      "characters": 387549
+    },
+    "Vlahuta": {
+      "documents": 96,
+      "work_groups": 96,
+      "characters": 799776
+    }
+  }
+}

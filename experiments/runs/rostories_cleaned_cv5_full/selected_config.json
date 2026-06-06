@@ -1,0 +1,26 @@
+{
+  "selection_method": "CH-SVM and FFT12-LR selected by stratified grouped CV on train+validation work groups; fusion alpha selected on grouped OOF train+validation predictions; held-out test used once after refit.",
+  "evaluation_unit": "work_group/source_text",
+  "cv_folds_requested": 5,
+  "cv_folds_used": 5,
+  "train_work_groups": 870,
+  "validation_work_groups": 185,
+  "trainval_work_groups": 1055,
+  "test_work_groups": 185,
+  "oof_work_groups": 1055,
+  "ch_svm": {
+    "chunk_size": 1280,
+    "overlap": 0,
+    "c": 0.03,
+    "class_weight": "balanced",
+    "min_char_count": 20
+  },
+  "fft12_lr": {
+    "c": 0.3,
+    "class_weight": "balanced",
+    "nfft": 2048
+  },
+  "fusion": {
+    "alpha_ch_svm": 0.95
+  }
+}

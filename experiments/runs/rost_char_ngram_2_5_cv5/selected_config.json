@@ -1,0 +1,42 @@
+{
+  "selection_method": "character n-gram baseline selected by stratified grouped CV on train+validation work groups; held-out test used once after refit.",
+  "evaluation_unit": "work_group/source_text",
+  "cv_folds_requested": 5,
+  "cv_folds_used": 5,
+  "train_work_groups": 276,
+  "validation_work_groups": 58,
+  "trainval_work_groups": 334,
+  "test_work_groups": 58,
+  "char_ngram_2_5_svm": {
+    "ngram_min": 2,
+    "ngram_max": 5,
+    "c": 10.0,
+    "class_weight": "balanced",
+    "min_df": 1,
+    "sublinear_tf": false
+  },
+  "class_order": [
+    "Creanga",
+    "Delavrancea",
+    "Eminescu",
+    "Filimon",
+    "Garleanu",
+    "Ispirescu",
+    "Oltean",
+    "Plugaru",
+    "Rebreanu",
+    "Slavici"
+  ],
+  "vocabulary_size": 451365,
+  "vectorizer": {
+    "analyzer": "char",
+    "lowercase": false,
+    "ngram_range": [
+      2,
+      5
+    ],
+    "use_idf": true,
+    "norm": "l2"
+  },
+  "score_interpretation": "softmax-normalized LinearSVC decision scores are used for source-text aggregation and top-k ranking; they are not calibrated probabilities"
+}

@@ -1,0 +1,38 @@
+{
+  "method": "CHiPS-R top-5 listwise reranker",
+  "input": "data/ro-stories-original",
+  "dataset": "rostories",
+  "split_json": "experiments/configs/ro_stories_original_source_split_seed42.json",
+  "base_run": "experiments/runs/ro_stories_original_cv5_full",
+  "base_selection": {
+    "selection_method": "CH-SVM and FFT12-LR selected by stratified grouped CV on train+validation work groups; fusion alpha selected on grouped OOF train+validation predictions; held-out test used once after refit.",
+    "evaluation_unit": "work_group/source_text",
+    "cv_folds_requested": 5,
+    "cv_folds_used": 5,
+    "train_work_groups": 867,
+    "validation_work_groups": 184,
+    "trainval_work_groups": 1051,
+    "test_work_groups": 184,
+    "oof_work_groups": 1051,
+    "ch_svm": {
+      "chunk_size": 1024,
+      "overlap": 512,
+      "c": 0.03,
+      "class_weight": "balanced",
+      "min_char_count": 20
+    },
+    "fft12_lr": {
+      "c": 0.1,
+      "class_weight": "balanced",
+      "nfft": 2048
+    },
+    "fusion": {
+      "alpha_ch_svm": 0.9
+    }
+  },
+  "oof_folds_requested": 5,
+  "meta_folds_requested": 5,
+  "seed": 42,
+  "top_k": 5,
+  "leakage_note": "Base reranker training features are grouped OOF predictions on train+validation. The held-out test split is used once after selecting the reranker by meta-CV."
+}
