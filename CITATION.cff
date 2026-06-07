@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software or its reproducibility artifacts, please cite the CHiPS/ROST article and this repository."
+title: "CHiPS: Character Histograms and Positional Signals for Lightweight Authorship Attribution in Romanian Texts"
+type: software
+authors:
+  - family-names: Avram
+    given-names: Sanda-Maria
+    orcid: "https://orcid.org/0000-0002-2007-1661"
+  - family-names: Turcas
+    given-names: George C.
+    orcid: "https://orcid.org/0000-0002-2739-5917"
+repository-code: "https://github.com/georgeturcasubb/chips-rost"
+version: "0.1.0"
+# Zenodo DOI and date-released will be added after the GitHub release is archived.
+license: MIT
+abstract: "Reproducibility package for CHiPS, a lightweight character-level authorship-attribution method for Romanian texts under grouped, leakage-aware evaluation."

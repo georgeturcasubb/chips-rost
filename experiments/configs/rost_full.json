@@ -1,0 +1,8 @@
+{
+  "description": "Full local/remote ROST grid. Use locally first; move to Lehner only if too slow and after approval.",
+  "input": "data/ROST-NormElip",
+  "dataset": "rost",
+  "quick": false,
+  "seed": 42,
+  "command": "python3 scripts/chips.py train-all --input data/ROST-NormElip --output experiments/runs/rost_full"
+}

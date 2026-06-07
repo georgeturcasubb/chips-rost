@@ -9,8 +9,16 @@ __pycache__/
 .DS_Store
 
 # Local-only corpus inputs are intentionally not vendored.
+data/ro-stories-original/
+data/ro-storiesAP.zip
 data/ROST-NormElip/
 data/ro-storiesAP-ROST.zip
+workspace/source_material/datasets/*.zip
+workspace/source_material/original_article/*.zip
+workspace/source_material/original_article/*.pdf
+workspace/source_material/legacy_experiments/*.zip
+workspace/source_material/legacy_experiments/scripts/
+workspace/source_material/legacy_experiments/metrics_and_reports/
 
 # Generated outputs and local model binaries.
 models/
@@ -19,3 +27,5 @@ models/
 dist/
 latex/
 experiments/reproduce/
+experiments/runs/*_norm_input/
+experiments/runs/*_smoke/

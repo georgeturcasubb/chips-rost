@@ -1,7 +1,10 @@
-# CHiPS-ROST Reviewer Release
+# CHiPS/ROST Reproducibility Package
 
-This repository contains the minimal public code and reproducibility artifacts
-for:
+Canonical public repository:
+
+`https://github.com/georgeturcasubb/chips-rost`
+
+This repository contains the code and release artifacts for:
 
 > CHiPS: Character Histograms and Positional Signals for Lightweight Authorship
 > Attribution in Romanian Texts
@@ -17,27 +20,25 @@ Romanian literary texts. The core models are:
 - `CHiPS-R`: optional top-5 reranking selected from grouped out-of-fold
   predictions, not tuned on held-out test labels.
 
-This public branch is intentionally reviewer-focused. It includes the public
-ro-stories text copy and the cleaned ro-stories AP archive needed for the
-secondary public corpus checks.
+The release is intentionally data-careful. It provides code, split files,
+result artifacts, diagnostics, checksums, and documentation. It does not vendor
+full-text corpora by default.
 
 ## Contents
 
-- `src/chips/` — reusable Python package for loading, splitting, features, and
+- `src/chips/` - reusable Python package for loading, splitting, features, and
   modeling.
-- `scripts/` — command-line scripts needed to describe datasets, make grouped
-  splits, train CHiPS models, run CHiPS-R, audit corpora, and run the
-  ROSTories-cleaned shortcut-risk sensitivity check.
-- `experiments/configs/` — locked grouped split/configuration JSON files.
-- `experiments/runs/` — selected metrics, predictions, CV grids, audit outputs,
-  and software-version manifests used to inspect the reported results.
-- `tests/` — small unit/smoke tests for release-critical helpers.
-- `data/ro-stories-original/` — public ro-stories text files used for the
-  contextual grouped run.
-- `data/ro-storiesAP.zip` — cleaned paragraph-aggregated ro-stories archive
-  used for the public secondary cleaned-corpus run.
-- `data/README.md` — data-placement and redistribution policy for public and
-  local-only inputs.
+- `scripts/` - command-line tools for dataset description, normalization,
+  grouped splits, model training, reranking, corpus audits, diagnostics, and
+  paper tables.
+- `experiments/configs/` - locked grouped split/configuration JSON files.
+- `experiments/runs/` and `experiments/results/` - selected metrics,
+  predictions, CV grids, audit outputs, tables, and software-version manifests.
+- `tests/` - unit and smoke tests for release-critical helpers.
+- `data/README.md` - corpus placement and redistribution policy.
+- `DATA_LICENSES.md` - corpus provenance and release restrictions.
+- `REPRODUCIBILITY.md` - commands and expected outputs for reruns.
+- `CITATION.cff` - citation metadata for the software/reproducibility package.
 
 ## Setup
 
@@ -48,58 +49,55 @@ pip install -r requirements.txt
 python -m unittest discover -s tests
 ```
 
-The code requires Python 3.10 or newer.
+The package requires Python 3.10 or newer. The exact local environment used in
+the current workspace is recorded in `requirements-freeze.txt`; individual
+experiment folders also include `software_versions.json` where applicable.
 
-## Data Included
+## Public Data Policy
 
-This public GitHub repository includes:
+No full-text corpus directory or corpus ZIP is tracked in the public release by
+default. This includes the public ro-stories files, the cleaned ro-stories
+AP-clean archive, ROST, and the ROST-containing ROSTories-cleaned archive.
 
-- `data/ro-stories-original/`
-- `data/ro-storiesAP.zip`
+Users who have lawful access to the corpora should place them locally as
+follows:
 
-The locked ROST and ROSTories-cleaned checks require local inputs that are not
-public GitHub redistributable:
+- `data/ro-stories-original/` - public ro-stories text files, obtained from the
+  upstream Hugging Face release.
+- `data/ro-storiesAP.zip` - cleaned paragraph-aggregated ro-stories export used
+  for the AP-clean secondary run.
+- `data/ROST-NormElip/` - local normalized ROST text directory.
+- `data/ro-storiesAP-ROST.zip` - local ROSTories-cleaned archive containing
+  ROST material.
 
-- `data/ROST-NormElip/` — normalized ROST text directory.
-- `data/ro-storiesAP-ROST.zip` — ROSTories-cleaned archive containing ROST
-  material.
-
-See `data/README.md` for details.
+ROST and ROST-containing ROSTories-cleaned full texts are not released through
+the public GitHub repository because of attribution and redistribution
+constraints. The article reports those results from local/confidential inputs;
+the public repository keeps the code and non-text artifacts needed to inspect
+or rerun the experiments once the user has local access to the corpora.
 
 ## Public Smoke Checks
 
-These commands run from a fresh clone using only files included in this
-repository:
+These commands run without full-text corpora:
 
 ```bash
 python -m unittest discover -s tests
-
-python scripts/chips.py describe \
-  --input data/ro-stories-original \
-  --dataset rostories \
-  --output experiments/reproduce/describe_ro_stories_original
-
-python scripts/audit_ro_stories.py \
-  --input data/ro-stories-original \
-  --dataset rostories \
-  --output experiments/reproduce/audit_ro_stories_original
-
-python scripts/chips.py train-all-cv \
-  --input data/ro-storiesAP.zip \
-  --dataset rostories \
-  --split-json experiments/configs/ro_stories_ap_clean_source_split_seed42.json \
-  --output experiments/reproduce/ro_stories_ap_clean_quick \
-  --cv-folds 5 \
-  --quick \
-  --seed 42
+python scripts/check_release_inventory.py
+python scripts/rost_per_author.py
+python scripts/chips_r_detail.py
 ```
 
-The quick training command is a smoke test of the pipeline, not a replacement
-for the reported full grid. To rerun a reported full result, use the commands
-below without `--quick` and compare the new JSON/CSV files with the checked-in
-artifacts under `experiments/runs/`.
+With `make` available, the same checks are:
 
-## Reproduce The Main ROST Checks
+```bash
+make smoke-public
+make audit-public
+```
+
+The GitHub Actions workflow in `.github/workflows/tests.yml` runs the same
+public smoke checks on push and pull request events.
+
+## Main ROST Reruns
 
 These commands require the local-only `data/ROST-NormElip/` directory.
 
@@ -142,21 +140,10 @@ python scripts/chips_rerank.py \
   --seed 42
 ```
 
-ROST interpretability and surface-cue diagnostics:
+## Secondary Corpus Reruns
 
-```bash
-python scripts/rost_interpretability.py \
-  --input data/ROST-NormElip \
-  --dataset rost \
-  --split-json experiments/configs/rost_source_split_seed42.json \
-  --selected-config experiments/runs/rost_cv5_full/selected_config.json \
-  --interpretability-output experiments/reproduce/interpretability \
-  --ablation-output experiments/reproduce/surface_cue_ablations
-```
-
-## Secondary Corpus Checks
-
-Public ro-stories contextual run:
+Public ro-stories contextual run, after placing `data/ro-stories-original/`
+locally:
 
 ```bash
 python scripts/chips.py train-all-cv \
@@ -166,20 +153,9 @@ python scripts/chips.py train-all-cv \
   --output experiments/reproduce/ro_stories_original_cv5_full \
   --cv-folds 5 \
   --seed 42
-
-python scripts/chips_rerank.py \
-  --input data/ro-stories-original \
-  --dataset rostories \
-  --split-json experiments/configs/ro_stories_original_source_split_seed42.json \
-  --base-run experiments/reproduce/ro_stories_original_cv5_full \
-  --output experiments/reproduce/ro_stories_original_cv5_chips_r \
-  --top-k 5 \
-  --oof-folds 5 \
-  --meta-folds 5 \
-  --seed 42
 ```
 
-Cleaned ro-stories AP run:
+Cleaned ro-stories AP run, after placing `data/ro-storiesAP.zip` locally:
 
 ```bash
 python scripts/chips.py train-all-cv \
@@ -188,17 +164,6 @@ python scripts/chips.py train-all-cv \
   --split-json experiments/configs/ro_stories_ap_clean_source_split_seed42.json \
   --output experiments/reproduce/ro_stories_ap_clean_cv5_full \
   --cv-folds 5 \
-  --seed 42
-
-python scripts/chips_rerank.py \
-  --input data/ro-storiesAP.zip \
-  --dataset rostories \
-  --split-json experiments/configs/ro_stories_ap_clean_source_split_seed42.json \
-  --base-run experiments/reproduce/ro_stories_ap_clean_cv5_full \
-  --output experiments/reproduce/ro_stories_ap_clean_cv5_chips_r \
-  --top-k 5 \
-  --oof-folds 5 \
-  --meta-folds 5 \
   --seed 42
 ```
 
@@ -220,39 +185,42 @@ python scripts/chips.py train-all-cv \
   --seed 42
 ```
 
-Shortcut-risk sensitivity for author-name strings in ROSTories-cleaned:
-
-```bash
-python scripts/rostories_shortcut_sensitivity.py \
-  --input experiments/reproduce/rostories_cleaned_norm_input/texts \
-  --dataset rostories \
-  --split-json experiments/configs/rostories_cleaned_source_split_seed42.json \
-  --base-run experiments/reproduce/rostories_cleaned_cv5_full \
-  --output experiments/reproduce/rostories_cleaned_shortcut_sensitivity \
-  --top-k 5 \
-  --oof-folds 5 \
-  --meta-folds 5 \
-  --seed 42
-```
-
 ## Inspect Existing Result Artifacts
 
-The checked-in `experiments/runs/` files are plain CSV/JSON artifacts. Useful
-entry points are:
+The checked-in experiment artifacts are plain CSV/JSON files. Useful entry
+points are:
 
 - `experiments/runs/rost_cv5_full/metrics.json`
 - `experiments/runs/rost_char_ngram_2_5_cv5/metrics.json`
 - `experiments/runs/rost_cv5_chips_r/chips_r_metrics.json`
+- `experiments/results/rost_uncertainty/uncertainty_table.csv`
+- `experiments/results/rost_ngram_audit/diagnostic_table.csv`
+- `experiments/results/per_author/rost_per_author_metrics.csv`
+- `experiments/results/per_author/rost_confusion_matrix.csv`
+- `experiments/results/chips_r_detail/chips_r_detail.csv`
+- `experiments/results/chips_r_detail/chips_r_transition_summary.csv`
 - `experiments/results/interpretability/ch_svm_top_features.csv`
 - `experiments/results/surface_cue_ablations/ch_svm_surface_cue_ablation.csv`
 - `experiments/runs/rostories_cleaned_shortcut_sensitivity/summary.json`
-- `experiments/runs/audit_rostories_cleaned/combined_source_audit.json`
 
 These files are enough to inspect split discipline, selected configurations,
-held-out predictions, and the shortcut-risk sensitivity result. Public
-ro-stories and ro-stories AP-clean reruns can be performed directly from this
-repository. ROST and ROSTories-cleaned reruns require the local-only inputs
-listed above.
+held-out predictions, uncertainty calculations, shortcut audits, and
+interpretability diagnostics. Full reruns require the local data inputs listed
+above.
+
+## Release Checklist
+
+Before publishing a paper-ready release:
+
+1. Confirm that `git ls-files data` lists only `data/README.md`.
+2. Run `python scripts/check_release_inventory.py`.
+3. Run `python -m unittest discover -s tests`.
+4. Confirm the manuscript Data Availability section uses the same repository
+   URL, release tag, commit SHA, archive DOI, and data policy.
+5. Create the GitHub release tag only after the article text and repository
+   contents agree.
+6. Archive the GitHub release with Zenodo and add the version DOI to the
+   manuscript before final submission if a DOI is promised.
 
 ## AI-Assisted Preparation
 

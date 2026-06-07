@@ -1,0 +1,53 @@
+{
+  "created_by": "scripts/chips_r_detail.py",
+  "feature_family_labels": {
+    "base_agreement": "base-model agreement",
+    "base_confidence": "base confidence",
+    "candidate_anchor": "anchor flags/deltas",
+    "candidate_author_position": "author-position one-hot",
+    "candidate_probability": "candidate probabilities",
+    "candidate_rank": "candidate ranks",
+    "candidate_vote": "top-k vote counts",
+    "document_size": "document size",
+    "other": "other"
+  },
+  "model_class": "StandardScaler + LogisticRegression(lbfgs, max_iter=2000)",
+  "runs": [
+    {
+      "conclusion": "does not improve CHiPS-F (-1 source-text groups); primary ablation",
+      "corpus": "Locked ROST",
+      "feature_count": 215,
+      "policy": "CH_SVM_TOP5",
+      "role": "primary ablation",
+      "run_dir": "experiments/runs/rost_cv5_chips_r",
+      "run_id": "rost"
+    },
+    {
+      "conclusion": "ties CHiPS-F; contextual public corpus",
+      "corpus": "Public ro-stories original",
+      "feature_count": 260,
+      "policy": "CH_SVM_TOP5",
+      "role": "contextual public corpus",
+      "run_dir": "experiments/runs/ro_stories_original_cv5_chips_r",
+      "run_id": "ro_stories_original"
+    },
+    {
+      "conclusion": "improves CHiPS-F by +2 source-text groups; secondary ROST-overlapping corpus",
+      "corpus": "ROSTories-cleaned",
+      "feature_count": 260,
+      "policy": "UNION_RRF_TOP5",
+      "role": "secondary ROST-overlapping corpus",
+      "run_dir": "experiments/runs/rostories_cleaned_cv5_chips_r",
+      "run_id": "rostories_cleaned"
+    }
+  ],
+  "source_files_per_run": [
+    "reranker_protocol.json",
+    "chips_r_metrics.json",
+    "chips_r_predictions_test.csv",
+    "chips_r_feature_names.json"
+  ],
+  "transition_note": "Fixed, broken, and wrong-to-wrong counts are recomputed from held-out prediction CSVs, not copied from prose.",
+  "transition_rows": 6,
+  "unit": "held-out source-text group"
+}

@@ -1,0 +1,8 @@
+{
+  "description": "Small local smoke-test config for ROST",
+  "input": "data/ROST-NormElip",
+  "dataset": "rost",
+  "quick": true,
+  "seed": 42,
+  "command": "python3 scripts/chips.py train-all --input data/ROST-NormElip --output experiments/runs/rost_quick --quick --limit-per-author 8"
+}

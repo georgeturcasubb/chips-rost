@@ -1,0 +1,34 @@
+{
+  "char_ngram_predictions": "experiments/runs/rost_char_ngram_2_5_cv5/predictions_test.csv",
+  "chips_r_predictions": "experiments/runs/rost_cv5_chips_r/chips_r_predictions_test.csv",
+  "main_confusion_model": "CHiPS_F",
+  "models": [
+    {
+      "display_model": "Char 2--5 TF-IDF SVM",
+      "model": "CHAR_NGRAM_2_5_SVM",
+      "prediction_column": "predicted_author"
+    },
+    {
+      "display_model": "CH-SVM",
+      "model": "CH_SVM",
+      "prediction_column": "ch_svm_pred"
+    },
+    {
+      "display_model": "FFT12-LR",
+      "model": "FFT12_LR",
+      "prediction_column": "fft12_lr_pred"
+    },
+    {
+      "display_model": "CHiPS-F",
+      "model": "CHiPS_F",
+      "prediction_column": "chips_f_pred"
+    },
+    {
+      "display_model": "CHiPS-R",
+      "model": "CHiPS_R",
+      "prediction_column": "chips_r_pred"
+    }
+  ],
+  "n_groups": 58,
+  "unit": "held-out ROST source-text group"
+}

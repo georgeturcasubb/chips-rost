@@ -1,0 +1,7 @@
+run_id,corpus,comparator,comparator_column,test_groups,comparator_correct,chips_r_correct,delta_correct,overrides,fixed_errors,broken_correct,wrong_to_wrong_changes,unchanged_comparator_errors
+rost,Locked ROST,CH_SVM,ch_svm_pred,58,53,53,0,2,1,1,0,4
+rost,Locked ROST,CHiPS_F,chips_f_pred,58,54,53,-1,1,0,1,0,4
+ro_stories_original,Public ro-stories original,CH_SVM,ch_svm_pred,184,162,166,4,12,7,3,2,13
+ro_stories_original,Public ro-stories original,CHiPS_F,chips_f_pred,184,166,166,0,15,7,7,1,10
+rostories_cleaned,ROSTories-cleaned,CH_SVM,ch_svm_pred,185,162,165,3,13,6,3,4,13
+rostories_cleaned,ROSTories-cleaned,CHiPS_F,chips_f_pred,185,163,165,2,10,4,2,4,14

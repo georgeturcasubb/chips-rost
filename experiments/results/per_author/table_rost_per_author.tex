@@ -1,0 +1,20 @@
+\begin{table}
+  \tbl{\caption{Per-author locked ROST held-out support and correct source-text groups. All columns use the same 58 held-out source-text groups. The last column lists nonzero CHiPS-F confusions by predicted author.}\label{tab:rost-per-author}}
+  {\tablefont\begin{tabular}{lccccccp{0.20\textwidth}}
+    \hline
+    Author & Support & Char 2--5 & CH-SVM & FFT12-LR & CHiPS-F & CHiPS-R & CHiPS-F confusions\\
+    \hline
+    Creanga & 4 & 4 & 4 & 4 & 4 & 4 & --\\
+    Delavrancea & 6 & 6 & 6 & 6 & 6 & 6 & --\\
+    Eminescu & 4 & 4 & 4 & 1 & 4 & 3 & --\\
+    Filimon & 4 & 4 & 4 & 4 & 4 & 4 & --\\
+    Garleanu & 6 & 6 & 6 & 6 & 6 & 6 & --\\
+    Ispirescu & 6 & 6 & 5 & 5 & 5 & 5 & 1 as Filimon\\
+    Oltean & 5 & 5 & 4 & 4 & 4 & 4 & 1 as Slavici\\
+    Plugaru & 6 & 6 & 5 & 6 & 5 & 5 & 1 as Rebreanu\\
+    Rebreanu & 9 & 9 & 8 & 6 & 9 & 9 & --\\
+    Slavici & 8 & 8 & 7 & 7 & 7 & 7 & 1 as Garleanu\\
+    \hline
+  \end{tabular}}
+  {\begin{tabnote}Protocol: same locked ROST grouped split, seed 42, and held-out source-text predictions as Table~\ref{tab:rost-results}; generated from the released prediction CSV files.\end{tabnote}}
+\end{table}
