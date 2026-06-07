@@ -59,6 +59,8 @@ FORBIDDEN_TRACKED_SUFFIXES = [
     ".zip",
 ]
 
+OLD_REPOSITORY_URL = "https://github.com/" + "sanda" + "-avram/" + "fingerprint" + "OnROST"
+
 REQUIRED_TEXT = {
     "README.md": [
         "https://github.com/georgeturcasubb/chips-rost",
@@ -74,7 +76,7 @@ FORBIDDEN_TEXT = {
     "README.md": [
         "This public branch is intentionally reviewer-focused",
         "This public GitHub repository includes:",
-        "https://github.com/sanda-avram/fingerprintOnROST",
+        OLD_REPOSITORY_URL,
         "latex/article",
         "working article source",
     ],
