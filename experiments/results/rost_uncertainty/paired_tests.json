@@ -1,0 +1,39 @@
+{
+  "method": "Exact two-sided binomial sign test over paired discordant source-text correctness outcomes; equivalent to exact McNemar for the paired binary correct/incorrect comparison.",
+  "unit": "locked ROST held-out source-text group",
+  "n": 58,
+  "comparisons": [
+    {
+      "name": "CHiPS-F vs CH-SVM",
+      "model_a_key": "CHiPS_F",
+      "model_a_label": "CHiPS-F",
+      "model_b_key": "CH_SVM",
+      "model_b_label": "CH-SVM",
+      "model_a_correct_model_b_wrong": 1,
+      "model_a_wrong_model_b_correct": 0,
+      "both_correct": 53,
+      "both_wrong": 4,
+      "discordant": 1,
+      "model_a_accuracy": 0.9310344827586207,
+      "model_b_accuracy": 0.9137931034482759,
+      "accuracy_delta_model_a_minus_model_b": 0.01724137931034475,
+      "two_sided_exact_binomial_p": 1.0
+    },
+    {
+      "name": "Char 2--5 TF--IDF SVM vs CHiPS-F",
+      "model_a_key": "CHAR_NGRAM_2_5_SVM",
+      "model_a_label": "Char 2--5 TF--IDF SVM",
+      "model_b_key": "CHiPS_F",
+      "model_b_label": "CHiPS-F",
+      "model_a_correct_model_b_wrong": 4,
+      "model_a_wrong_model_b_correct": 0,
+      "both_correct": 54,
+      "both_wrong": 0,
+      "discordant": 4,
+      "model_a_accuracy": 1.0,
+      "model_b_accuracy": 0.9310344827586207,
+      "accuracy_delta_model_a_minus_model_b": 0.06896551724137934,
+      "two_sided_exact_binomial_p": 0.125
+    }
+  ]
+}

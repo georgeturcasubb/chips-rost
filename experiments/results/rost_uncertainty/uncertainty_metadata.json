@@ -1,0 +1,21 @@
+{
+  "chips_f_predictions": "experiments/runs/rost_cv5_full/predictions_test.csv",
+  "chips_r_predictions": "experiments/runs/rost_cv5_chips_r/chips_r_predictions_test.csv",
+  "ngram_predictions": "experiments/runs/rost_char_ngram_2_5_cv5/predictions_test.csv",
+  "bootstrap_samples": 10000,
+  "seed": 42,
+  "accuracy_ci": "Wilson score interval, 95 percent",
+  "macro_f1_ci": "Stratified nonparametric bootstrap percentile interval, 95 percent",
+  "labels": [
+    "Creanga",
+    "Delavrancea",
+    "Eminescu",
+    "Filimon",
+    "Garleanu",
+    "Ispirescu",
+    "Oltean",
+    "Plugaru",
+    "Rebreanu",
+    "Slavici"
+  ]
+}

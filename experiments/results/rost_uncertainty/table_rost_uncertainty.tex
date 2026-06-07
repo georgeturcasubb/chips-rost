@@ -1,0 +1,15 @@
+\begin{table}
+  \tbl{\caption{Locked ROST uncertainty over the 58 held-out source-text groups. Accuracy intervals are 95\% Wilson score intervals; macro-F1 intervals are 95\% stratified bootstrap percentile intervals over source-text groups within author.}\label{tab:rost-uncertainty}}
+  {\tablefont\begin{tabular}{lccc}
+    \hline
+    Model & Correct / 58 & Accuracy (95\% CI) & Macro-F1 (95\% CI)\\
+    \hline
+    Char 2--5 TF--IDF SVM (matched) & 58/58 & 1.0000 [0.9379, 1.0000] & 1.0000 [1.0000, 1.0000]\\
+    CH-SVM & 53/58 & 0.9138 [0.8136, 0.9626] & 0.9172 [0.8421, 0.9830]\\
+    FFT12-LR & 49/58 & 0.8448 [0.7307, 0.9162] & 0.8266 [0.7314, 0.9097]\\
+    CHiPS-F & 54/58 & 0.9310 [0.8357, 0.9729] & 0.9341 [0.8640, 0.9856]\\
+    CHiPS-R (OOF ablation) & 53/58 & 0.9138 [0.8136, 0.9626] & 0.9110 [0.8282, 0.9798]\\
+    \hline
+  \end{tabular}}
+  {}
+\end{table}
