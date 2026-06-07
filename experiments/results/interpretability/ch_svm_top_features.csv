@@ -1,0 +1,101 @@
+author,direction,rank,feature,display_feature,latex_feature,category,standardized_weight
+Creanga,positive,1,char_entropy,char entropy,char entropy,distribution,1.214534192684086
+Creanga,positive,2,"char_freq:,","freq(,)",freq(comma),punctuation,0.3919811027454768
+Creanga,positive,3,char_freq:a,freq(a),freq(a),letter,0.3204747809951519
+Creanga,positive,4,char_freq:-,freq(-),freq(dash),punctuation,0.2697755289946376
+Creanga,positive,5,char_freq:e,freq(e),freq(e),letter,0.23324692858316287
+Creanga,negative,1,char_freq:…,freq(…),freq(ellipsis),punctuation,-0.7382868105951325
+Creanga,negative,2,char_freq:.,freq(.),freq(period),punctuation,-0.5030828765860993
+Creanga,negative,3,punctuation_ratio,punctuation ratio,punctuation ratio,punctuation,-0.3031744521607865
+Creanga,negative,4,char_freq:E,freq(E),freq(E),letter,-0.24476961417650986
+Creanga,negative,5,char_freq:s,freq(s),freq(s),letter,-0.238203974413917
+Delavrancea,positive,1,punctuation_ratio,punctuation ratio,punctuation ratio,punctuation,0.6397171800889261
+Delavrancea,positive,2,char_entropy,char entropy,char entropy,distribution,0.3042859617048415
+Delavrancea,positive,3,char_freq:C,freq(C),freq(C),letter,0.09930065911488986
+Delavrancea,positive,4,char_freq:K,freq(K),freq(K),letter,0.0859021946298005
+Delavrancea,positive,5,char_freq:Ș,freq(Ș),freq(S-comma),diacritic,0.08562984176929776
+Delavrancea,negative,1,char_freq:-,freq(-),freq(dash),punctuation,-0.4526485521935021
+Delavrancea,negative,2,uppercase_ratio,uppercase ratio,uppercase ratio,case,-0.40931664697751224
+Delavrancea,negative,3,char_freq:a,freq(a),freq(a),letter,-0.2492252765338679
+Delavrancea,negative,4,char_freq:ö,freq(ö),freq(ö),letter,-0.2380847761969561
+Delavrancea,negative,5,char_freq:e,freq(e),freq(e),letter,-0.2364265082405394
+Eminescu,positive,1,uppercase_ratio,uppercase ratio,uppercase ratio,case,0.6866856203649309
+Eminescu,positive,2,char_freq:-,freq(-),freq(dash),punctuation,0.29236969770582394
+Eminescu,positive,3,char_freq:',freq('),freq(apostrophe),punctuation,0.1988596933330762
+Eminescu,positive,4,punctuation_ratio,punctuation ratio,punctuation ratio,punctuation,0.14817635616184988
+Eminescu,positive,5,char_freq:r,freq(r),freq(r),letter,0.12644302893340367
+Eminescu,negative,1,char_freq:S,freq(S),freq(S),letter,-0.24252783648462123
+Eminescu,negative,2,char_freq:M,freq(M),freq(M),letter,-0.23562508724611322
+Eminescu,negative,3,char_freq:Ș,freq(Ș),freq(S-comma),diacritic,-0.2229932632976141
+Eminescu,negative,4,char_freq:P,freq(P),freq(P),letter,-0.21321546313594453
+Eminescu,negative,5,"char_freq:,","freq(,)",freq(comma),punctuation,-0.20628542751957915
+Filimon,positive,1,char_freq:R,freq(R),freq(R),letter,0.2526651701613252
+Filimon,positive,2,char_freq:-,freq(-),freq(dash),punctuation,0.2004024573113887
+Filimon,positive,3,char_freq:m,freq(m),freq(m),letter,0.1899109993512622
+Filimon,positive,4,char_freq:z,freq(z),freq(z),letter,0.18930723440084857
+Filimon,positive,5,char_freq:F,freq(F),freq(F),letter,0.167776795174479
+Filimon,negative,1,punctuation_ratio,punctuation ratio,punctuation ratio,punctuation,-0.5232012259418254
+Filimon,negative,2,char_freq:â,freq(â),freq(a-circumflex),diacritic,-0.5006894042129604
+Filimon,negative,3,char_freq:.,freq(.),freq(period),punctuation,-0.5002156236289534
+Filimon,negative,4,char_freq:…,freq(…),freq(ellipsis),punctuation,-0.34338078983597115
+Filimon,negative,5,char_freq:Ș,freq(Ș),freq(S-comma),diacritic,-0.2257726444889578
+Garleanu,positive,1,char_entropy,char entropy,char entropy,distribution,0.9778226209225068
+Garleanu,positive,2,char_freq:.,freq(.),freq(period),punctuation,0.4140422906550204
+Garleanu,positive,3,char_freq::,freq(:),freq(colon),punctuation,0.33634612301261546
+Garleanu,positive,4,char_freq:a,freq(a),freq(a),letter,0.23992094447737514
+Garleanu,positive,5,"char_freq:,","freq(,)",freq(comma),punctuation,0.21238766393235706
+Garleanu,negative,1,char_freq:x,freq(x),freq(x),letter,-0.598588543346667
+Garleanu,negative,2,uppercase_ratio,uppercase ratio,uppercase ratio,case,-0.4288870137053844
+Garleanu,negative,3,char_freq:á,freq(á),freq(á),letter,-0.35776552802250383
+Garleanu,negative,4,char_freq:1,freq(1),freq(1),digit,-0.29683169597490955
+Garleanu,negative,5,char_freq:NEWLINE,freq(NEWLINE),freq(newline),whitespace,-0.2650437365408835
+Ispirescu,positive,1,char_entropy,char entropy,char entropy,distribution,1.1312003351677022
+Ispirescu,positive,2,char_freq:.,freq(.),freq(period),punctuation,0.6421720973789218
+Ispirescu,positive,3,char_freq:e,freq(e),freq(e),letter,0.543298246810096
+Ispirescu,positive,4,char_freq:ă,freq(ă),freq(a-breve),diacritic,0.4716451358921233
+Ispirescu,positive,5,char_freq:u,freq(u),freq(u),letter,0.3260649749008225
+Ispirescu,negative,1,char_freq:…,freq(…),freq(ellipsis),punctuation,-2.4204756191368064
+Ispirescu,negative,2,punctuation_ratio,punctuation ratio,punctuation ratio,punctuation,-0.562469885820209
+Ispirescu,negative,3,char_freq:!,freq(!),freq(exclamation mark),punctuation,-0.5399172544653327
+Ispirescu,negative,4,uppercase_ratio,uppercase ratio,uppercase ratio,case,-0.4565282837856712
+Ispirescu,negative,5,char_freq:x,freq(x),freq(x),letter,-0.36994248027322313
+Oltean,positive,1,char_freq:.,freq(.),freq(period),punctuation,0.6774049914071288
+Oltean,positive,2,char_freq::,freq(:),freq(colon),punctuation,0.42979552303439716
+Oltean,positive,3,char_entropy,char entropy,char entropy,distribution,0.4132291658907966
+Oltean,positive,4,char_freq:e,freq(e),freq(e),letter,0.2279860715107936
+Oltean,positive,5,char_freq:p,freq(p),freq(p),letter,0.2255283787286002
+Oltean,negative,1,"char_freq:,","freq(,)",freq(comma),punctuation,-0.8137395111312767
+Oltean,negative,2,char_freq:',freq('),freq(apostrophe),punctuation,-0.7643397466858507
+Oltean,negative,3,char_freq:;,freq(;),freq(semicolon),punctuation,-0.7251607859456257
+Oltean,negative,4,char_freq:B,freq(B),freq(B),letter,-0.4918274989560392
+Oltean,negative,5,"char_freq:""","freq("")",freq(quote),punctuation,-0.47208270898444477
+Plugaru,positive,1,char_entropy,char entropy,char entropy,distribution,1.2821849966823198
+Plugaru,positive,2,char_freq:ă,freq(ă),freq(a-breve),diacritic,0.35733538688272126
+Plugaru,positive,3,char_freq:e,freq(e),freq(e),letter,0.3272146049085367
+Plugaru,positive,4,char_freq:t,freq(t),freq(t),letter,0.1915844929634531
+Plugaru,positive,5,char_freq:SPACE,freq(SPACE),freq(space),whitespace,0.18813749768038604
+Plugaru,negative,1,char_freq:;,freq(;),freq(semicolon),punctuation,-1.300768218028167
+Plugaru,negative,2,char_freq::,freq(:),freq(colon),punctuation,-0.5423337510223455
+Plugaru,negative,3,char_freq:',freq('),freq(apostrophe),punctuation,-0.36480055301998765
+Plugaru,negative,4,punctuation_ratio,punctuation ratio,punctuation ratio,punctuation,-0.3475567848766317
+Plugaru,negative,5,char_freq:k,freq(k),freq(k),letter,-0.3187860366716661
+Rebreanu,positive,1,char_entropy,char entropy,char entropy,distribution,1.3835228402682682
+Rebreanu,positive,2,char_freq:a,freq(a),freq(a),letter,0.3447252438235341
+Rebreanu,positive,3,char_freq:i,freq(i),freq(i),letter,0.316125687793018
+Rebreanu,positive,4,char_freq:e,freq(e),freq(e),letter,0.28944700385888517
+Rebreanu,positive,5,char_freq:o,freq(o),freq(o),letter,0.16271493057700798
+Rebreanu,negative,1,char_freq:;,freq(;),freq(semicolon),punctuation,-0.48950162779602857
+Rebreanu,negative,2,punctuation_ratio,punctuation ratio,punctuation ratio,punctuation,-0.2857999722404869
+Rebreanu,negative,3,char_freq:X,freq(X),freq(X),letter,-0.264658097293047
+Rebreanu,negative,4,char_freq:á,freq(á),freq(á),letter,-0.1842148444114978
+Rebreanu,negative,5,char_freq:[,freq([),freq(punctuation [),punctuation,-0.16392420142225997
+Slavici,positive,1,char_entropy,char entropy,char entropy,distribution,0.617662546292969
+Slavici,positive,2,char_freq:SPACE,freq(SPACE),freq(space),whitespace,0.33777391302281423
+Slavici,positive,3,space_ratio,space ratio,space ratio,whitespace,0.33777391302281423
+Slavici,positive,4,char_freq:a,freq(a),freq(a),letter,0.27150402928004536
+Slavici,positive,5,char_freq:r,freq(r),freq(r),letter,0.26672497497889425
+Slavici,negative,1,punctuation_ratio,punctuation ratio,punctuation ratio,punctuation,-0.3737589691772423
+Slavici,negative,2,char_freq:…,freq(…),freq(ellipsis),punctuation,-0.3211850108833088
+Slavici,negative,3,char_freq:Ș,freq(Ș),freq(S-comma),diacritic,-0.19149535857983854
+Slavici,negative,4,char_freq:­,freq(­),freq(U+00AD),symbol,-0.1874933618351216
+Slavici,negative,5,char_freq:(,freq((),freq(punctuation (),punctuation,-0.1689669422551449

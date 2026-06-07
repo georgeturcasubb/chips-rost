@@ -1,0 +1,104 @@
+{
+  "artifact": "CH-SVM standardized linear coefficients",
+  "input": "data/ROST-NormElip",
+  "dataset": "rost",
+  "normalization": "ROST-NormElip normalized input: NFC, cedilla-to-comma Romanian diacritics, quote/dash/ellipsis normalization, whitespace collapse; case, punctuation, digits, diacritics, and line breaks preserved",
+  "split_json": "experiments/configs/rost_source_split_seed42.json",
+  "selected_config": "experiments/runs/rost_cv5_full/selected_config.json",
+  "training_partition": "locked train+validation source-text groups",
+  "test_usage": "held-out test labels are not used for coefficient inspection",
+  "ch_svm_config": {
+    "chunk_size": 1024,
+    "overlap": 512,
+    "c": 0.3,
+    "class_weight": "balanced",
+    "min_char_count": 20
+  },
+  "class_order": [
+    "Creanga",
+    "Delavrancea",
+    "Eminescu",
+    "Filimon",
+    "Garleanu",
+    "Ispirescu",
+    "Oltean",
+    "Plugaru",
+    "Rebreanu",
+    "Slavici"
+  ],
+  "trainval_documents": 337,
+  "trainval_work_groups": 334,
+  "test_documents": 63,
+  "test_work_groups": 58,
+  "dataset_summary": {
+    "documents": 400,
+    "authors": 10,
+    "work_groups": 392,
+    "characters": 7414355,
+    "per_author": {
+      "Creanga": {
+        "documents": 28,
+        "work_groups": 25,
+        "characters": 559248
+      },
+      "Delavrancea": {
+        "documents": 43,
+        "work_groups": 43,
+        "characters": 1025576
+      },
+      "Eminescu": {
+        "documents": 27,
+        "work_groups": 27,
+        "characters": 887301
+      },
+      "Filimon": {
+        "documents": 34,
+        "work_groups": 29,
+        "characters": 543520
+      },
+      "Garleanu": {
+        "documents": 43,
+        "work_groups": 43,
+        "characters": 209117
+      },
+      "Ispirescu": {
+        "documents": 40,
+        "work_groups": 40,
+        "characters": 707815
+      },
+      "Oltean": {
+        "documents": 33,
+        "work_groups": 33,
+        "characters": 102689
+      },
+      "Plugaru": {
+        "documents": 40,
+        "work_groups": 40,
+        "characters": 502455
+      },
+      "Rebreanu": {
+        "documents": 60,
+        "work_groups": 60,
+        "characters": 788637
+      },
+      "Slavici": {
+        "documents": 52,
+        "work_groups": 52,
+        "characters": 2087997
+      }
+    }
+  },
+  "software_versions": {
+    "chips": "0.1.0",
+    "python": "3.14.2",
+    "python_full": "3.14.2 (main, Dec  5 2025, 16:49:16) [Clang 17.0.0 (clang-1700.4.4.1)]",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.8.0",
+      "joblib": "1.5.3"
+    }
+  }
+}

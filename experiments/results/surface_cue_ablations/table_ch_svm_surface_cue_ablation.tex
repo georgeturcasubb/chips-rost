@@ -1,0 +1,17 @@
+\begin{table}
+  \tbl{\caption{Fixed-config CH-SVM surface-cue ablations on the locked ROST held-out source-text groups. Each variant reuses the grouped-CV-selected CH-SVM hyperparameters, refits on train+validation only, and is evaluated once on the same held-out groups. Variants are diagnostics, not model-selection candidates.}\label{tab:chsvm-ablation}}
+  {\tablefont\begin{tabular}{lcccc}
+    \hline
+    Variant & Features used & Correct / 58 & Accuracy & Macro-F1\\
+    \hline
+    Full CH-SVM & 102 & 53/58 & 0.9138 & 0.9172\\
+    Letters only & 63 & 47/58 & 0.8103 & 0.7927\\
+    No punctuation & 85 & 51/58 & 0.8793 & 0.8705\\
+    No digits & 91 & 53/58 & 0.9138 & 0.9172\\
+    No diacritics & 92 & 53/58 & 0.9138 & 0.9234\\
+    No uppercase & 73 & 53/58 & 0.9138 & 0.9207\\
+    No length & 101 & 53/58 & 0.9138 & 0.9172\\
+    \hline
+  \end{tabular}}
+  {}
+\end{table}

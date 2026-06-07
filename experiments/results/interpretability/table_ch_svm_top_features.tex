@@ -1,0 +1,20 @@
+\begin{table}
+  \tbl{\caption{Strongest positive standardized CH-SVM coefficients by author on the locked ROST train+validation partition. The model is the grouped-CV-selected CH-SVM refit before the held-out test evaluation; weights are inspected after feature standardization.}\label{tab:chsvm-interpretability}}
+  {\tablefont\begin{tabular}{lp{0.68\textwidth}}
+    \hline
+    Author & Strongest positive CH-SVM features\\
+    \hline
+    Creanga & char entropy (distribution, 1.215); freq(comma) (punctuation, 0.392); freq(a) (letter, 0.320)\\
+    Delavrancea & punctuation ratio (punctuation, 0.640); char entropy (distribution, 0.304); freq(C) (letter, 0.099)\\
+    Eminescu & uppercase ratio (case, 0.687); freq(dash) (punctuation, 0.292); freq(apostrophe) (punctuation, 0.199)\\
+    Filimon & freq(R) (letter, 0.253); freq(dash) (punctuation, 0.200); freq(m) (letter, 0.190)\\
+    Garleanu & char entropy (distribution, 0.978); freq(period) (punctuation, 0.414); freq(colon) (punctuation, 0.336)\\
+    Ispirescu & char entropy (distribution, 1.131); freq(period) (punctuation, 0.642); freq(e) (letter, 0.543)\\
+    Oltean & freq(period) (punctuation, 0.677); freq(colon) (punctuation, 0.430); char entropy (distribution, 0.413)\\
+    Plugaru & char entropy (distribution, 1.282); freq(a-breve) (diacritic, 0.357); freq(e) (letter, 0.327)\\
+    Rebreanu & char entropy (distribution, 1.384); freq(a) (letter, 0.345); freq(i) (letter, 0.316)\\
+    Slavici & char entropy (distribution, 0.618); freq(space) (whitespace, 0.338); space ratio (whitespace, 0.338)\\
+    \hline
+  \end{tabular}}
+  {}
+\end{table}

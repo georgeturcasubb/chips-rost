@@ -142,6 +142,18 @@ python scripts/chips_rerank.py \
   --seed 42
 ```
 
+ROST interpretability and surface-cue diagnostics:
+
+```bash
+python scripts/rost_interpretability.py \
+  --input data/ROST-NormElip \
+  --dataset rost \
+  --split-json experiments/configs/rost_source_split_seed42.json \
+  --selected-config experiments/runs/rost_cv5_full/selected_config.json \
+  --interpretability-output experiments/reproduce/interpretability \
+  --ablation-output experiments/reproduce/surface_cue_ablations
+```
+
 ## Secondary Corpus Checks
 
 Public ro-stories contextual run:
@@ -231,6 +243,8 @@ entry points are:
 - `experiments/runs/rost_cv5_full/metrics.json`
 - `experiments/runs/rost_char_ngram_2_5_cv5/metrics.json`
 - `experiments/runs/rost_cv5_chips_r/chips_r_metrics.json`
+- `experiments/results/interpretability/ch_svm_top_features.csv`
+- `experiments/results/surface_cue_ablations/ch_svm_surface_cue_ablation.csv`
 - `experiments/runs/rostories_cleaned_shortcut_sensitivity/summary.json`
 - `experiments/runs/audit_rostories_cleaned/combined_source_audit.json`
 

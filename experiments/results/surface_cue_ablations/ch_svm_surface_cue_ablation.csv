@@ -1,0 +1,8 @@
+variant_key,variant_label,description,selected_features,total_features,removed_features,n_groups,correct,accuracy,macro_f1,balanced_accuracy
+full,Full CH-SVM,all one-character frequency and scalar CH-SVM features,102,102,0,58,53,0.9137931034482759,0.9171814296814297,0.9230555555555556
+letters_only,Letters only,only alphabetic one-character frequency features; no scalar statistics,63,102,39,58,47,0.8103448275862069,0.7927344877344876,0.8044444444444444
+no_punctuation,No punctuation,punctuation character frequencies and punctuation_ratio removed,85,102,17,58,51,0.8793103448275862,0.8705122655122656,0.8675
+no_digits,No digits,digit character frequencies and digit_ratio removed,91,102,11,58,53,0.9137931034482759,0.9171814296814297,0.9230555555555556
+no_diacritics,No diacritics,Romanian diacritic character frequencies and romanian_diacritic_ratio removed,92,102,10,58,53,0.9137931034482759,0.9234378796298301,0.9175000000000001
+no_uppercase,No uppercase,uppercase character frequencies and uppercase_ratio removed,73,102,29,58,53,0.9137931034482759,0.9207167832167832,0.9230555555555556
+no_length,No length,log1p_length removed,101,102,1,58,53,0.9137931034482759,0.9171814296814297,0.9230555555555556

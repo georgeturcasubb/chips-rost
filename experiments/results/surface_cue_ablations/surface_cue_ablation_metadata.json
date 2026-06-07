@@ -1,0 +1,83 @@
+{
+  "artifact": "fixed-config CH-SVM surface-cue ablation",
+  "input": "data/ROST-NormElip",
+  "dataset": "rost",
+  "normalization": "ROST-NormElip normalized input: NFC, cedilla-to-comma Romanian diacritics, quote/dash/ellipsis normalization, whitespace collapse; case, punctuation, digits, diacritics, and line breaks preserved",
+  "split_json": "experiments/configs/rost_source_split_seed42.json",
+  "selected_config": "experiments/runs/rost_cv5_full/selected_config.json",
+  "protocol": "all variants reuse the grouped-CV-selected CH-SVM hyperparameters; each variant refits on locked train+validation groups and is evaluated once on held-out test groups",
+  "test_usage": "held-out labels are used only for the fixed diagnostic evaluation, not for selecting variants or hyperparameters",
+  "ch_svm_config": {
+    "chunk_size": 1024,
+    "overlap": 512,
+    "c": 0.3,
+    "class_weight": "balanced",
+    "min_char_count": 20
+  },
+  "variants": [
+    {
+      "variant_key": "full",
+      "variant_label": "Full CH-SVM",
+      "description": "all one-character frequency and scalar CH-SVM features"
+    },
+    {
+      "variant_key": "letters_only",
+      "variant_label": "Letters only",
+      "description": "only alphabetic one-character frequency features; no scalar statistics"
+    },
+    {
+      "variant_key": "no_punctuation",
+      "variant_label": "No punctuation",
+      "description": "punctuation character frequencies and punctuation_ratio removed"
+    },
+    {
+      "variant_key": "no_digits",
+      "variant_label": "No digits",
+      "description": "digit character frequencies and digit_ratio removed"
+    },
+    {
+      "variant_key": "no_diacritics",
+      "variant_label": "No diacritics",
+      "description": "Romanian diacritic character frequencies and romanian_diacritic_ratio removed"
+    },
+    {
+      "variant_key": "no_uppercase",
+      "variant_label": "No uppercase",
+      "description": "uppercase character frequencies and uppercase_ratio removed"
+    },
+    {
+      "variant_key": "no_length",
+      "variant_label": "No length",
+      "description": "log1p_length removed"
+    }
+  ],
+  "class_order": [
+    "Creanga",
+    "Delavrancea",
+    "Eminescu",
+    "Filimon",
+    "Garleanu",
+    "Ispirescu",
+    "Oltean",
+    "Plugaru",
+    "Rebreanu",
+    "Slavici"
+  ],
+  "trainval_documents": 337,
+  "trainval_work_groups": 334,
+  "test_documents": 63,
+  "test_work_groups": 58,
+  "software_versions": {
+    "chips": "0.1.0",
+    "python": "3.14.2",
+    "python_full": "3.14.2 (main, Dec  5 2025, 16:49:16) [Clang 17.0.0 (clang-1700.4.4.1)]",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.8.0",
+      "joblib": "1.5.3"
+    }
+  }
+}
