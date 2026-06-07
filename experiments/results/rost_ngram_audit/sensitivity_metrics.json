@@ -1,0 +1,147 @@
+{
+  "dataset_summary": {
+    "documents": 400,
+    "authors": 10,
+    "work_groups": 392,
+    "characters": 7414355,
+    "per_author": {
+      "Creanga": {
+        "documents": 28,
+        "work_groups": 25,
+        "characters": 559248
+      },
+      "Delavrancea": {
+        "documents": 43,
+        "work_groups": 43,
+        "characters": 1025576
+      },
+      "Eminescu": {
+        "documents": 27,
+        "work_groups": 27,
+        "characters": 887301
+      },
+      "Filimon": {
+        "documents": 34,
+        "work_groups": 29,
+        "characters": 543520
+      },
+      "Garleanu": {
+        "documents": 43,
+        "work_groups": 43,
+        "characters": 209117
+      },
+      "Ispirescu": {
+        "documents": 40,
+        "work_groups": 40,
+        "characters": 707815
+      },
+      "Oltean": {
+        "documents": 33,
+        "work_groups": 33,
+        "characters": 102689
+      },
+      "Plugaru": {
+        "documents": 40,
+        "work_groups": 40,
+        "characters": 502455
+      },
+      "Rebreanu": {
+        "documents": 60,
+        "work_groups": 60,
+        "characters": 788637
+      },
+      "Slavici": {
+        "documents": 52,
+        "work_groups": 52,
+        "characters": 2087997
+      }
+    }
+  },
+  "split_json": "experiments/configs/rost_source_split_seed42.json",
+  "selected_config_json": "experiments/runs/rost_char_ngram_2_5_cv5/selected_config.json",
+  "fixed_selected_config": {
+    "ngram_min": 2,
+    "ngram_max": 5,
+    "c": 10.0,
+    "class_weight": "balanced",
+    "min_df": 1,
+    "sublinear_tf": false
+  },
+  "duplicate_summary": {
+    "exact_duplicate_hashes_crossing_partitions": 0,
+    "exact_duplicate_hashes_touching_test": 0,
+    "exact_duplicate_documents_crossing_partitions": 0
+  },
+  "near_duplicate_summary": {
+    "comparison_unit": "held-out source-text group versus train+validation source-text group",
+    "similarity": "character 5-gram TF-IDF cosine",
+    "test_groups": 58,
+    "trainval_groups": 334,
+    "max_similarity": 0.9938048035928975,
+    "median_of_test_group_max_similarity": 0.2580944077777699,
+    "pairs_at_or_above_threshold": 1,
+    "high_similarity_threshold": 0.95
+  },
+  "masking_summary": {
+    "documents_with_author_masks": 33,
+    "documents_with_title_masks": 181,
+    "total_author_intervals": 54,
+    "total_title_intervals": 1790,
+    "total_masked_characters": 17762
+  },
+  "sensitivity": [
+    {
+      "variant": "original_fixed_config",
+      "correct": 58,
+      "n_groups": 58,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "changed_predictions_from_original": 0
+    },
+    {
+      "variant": "mask_author_title_strings",
+      "correct": 58,
+      "n_groups": 58,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "changed_predictions_from_original": 0,
+      "changed_work_groups_from_original": ""
+    },
+    {
+      "variant": "strip_first_last_nonempty_lines",
+      "correct": 58,
+      "n_groups": 58,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "changed_predictions_from_original": 0,
+      "changed_work_groups_from_original": ""
+    },
+    {
+      "variant": "mask_author_title_and_strip_lines",
+      "correct": 58,
+      "n_groups": 58,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "changed_predictions_from_original": 0,
+      "changed_work_groups_from_original": ""
+    }
+  ],
+  "software_versions": {
+    "chips": "0.1.0",
+    "python": "3.14.2",
+    "python_full": "3.14.2 (main, Dec  5 2025, 16:49:16) [Clang 17.0.0 (clang-1700.4.4.1)]",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.8.0",
+      "joblib": "1.5.3"
+    }
+  },
+  "note": "Sensitivity variants keep the original grouped-CV-selected n-gram config fixed and do not use held-out labels for selection."
+}

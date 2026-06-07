@@ -1,0 +1,14 @@
+diagnostic,value,unit,note
+Exact duplicate hashes crossing split partitions,0,text hashes,Computed from full normalized document text.
+Exact duplicate hashes touching held-out test,0,text hashes,Any train/validation/test crossing duplicate involving test.
+Maximum held-out to train+validation similarity,0.9938,char 5-gram TF-IDF cosine,Maximum over held-out source-text groups.
+Near-duplicate pairs above threshold,1,pairs >= 0.95,Held-out source-text group versus train+validation source-text group.
+Held-out documents with self-author string,0,of 63 documents,Case/diacritic/punctuation-insensitive normalized match.
+Held-out groups with self-author string,0,of 58 groups,A group is flagged if any held-out document in it is flagged.
+Held-out documents with self-title string,27,of 63 documents,"Title is detected after ignoring spaces, punctuation, case, and diacritics."
+Held-out documents with first-line author/title hit,4,of 63 documents,Detectable source-header cue in first non-empty line.
+Held-out documents with last-line author/title hit,11,of 63 documents,Detectable source-footer cue in last non-empty line.
+Fixed selected n-gram SVM after original_fixed_config,58/58,held-out groups correct,accuracy=1.0000; no new test-based model selection.
+Fixed selected n-gram SVM after mask_author_title_strings,58/58,held-out groups correct,accuracy=1.0000; no new test-based model selection.
+Fixed selected n-gram SVM after strip_first_last_nonempty_lines,58/58,held-out groups correct,accuracy=1.0000; no new test-based model selection.
+Fixed selected n-gram SVM after mask_author_title_and_strip_lines,58/58,held-out groups correct,accuracy=1.0000; no new test-based model selection.

@@ -1,0 +1,20 @@
+\begin{table}
+  \tbl{\caption{ROST audit for the perfect matched character 2--5-gram TF--IDF SVM result. Similarity is character 5-gram TF--IDF cosine between each held-out source-text group and train+validation source-text groups. Sensitivity rows keep the originally selected n-gram SVM configuration fixed and do not tune on held-out labels.}\label{tab:rost-ngram-audit}}
+  {\tablefont\begin{tabular}{p{0.46\textwidth}p{0.14\textwidth}p{0.25\textwidth}}
+    \hline
+    Diagnostic & Value & Unit\\
+    \hline
+    Exact duplicate hashes touching test & 0 & text hashes\\
+    Max held-out/train+validation similarity & 0.9938 & char 5-gram TF--IDF cosine\\
+    Near-duplicate pairs ($\geq 0.95$) & 1 & pairs\\
+    Held-out docs with self-author string & 0 & of 63 documents\\
+    Held-out docs with self-title string & 27 & of 63 documents\\
+    First/last-line author-title hits & 4 / 11 & of 63 documents\\
+    Original fixed selected n-gram SVM & 58/58 & held-out groups correct\\
+    After masking author/title strings & 58/58 & held-out groups correct\\
+    After stripping first/last non-empty lines & 58/58 & held-out groups correct\\
+    After both masking and line stripping & 58/58 & held-out groups correct\\
+    \hline
+  \end{tabular}}
+  {}
+\end{table}
